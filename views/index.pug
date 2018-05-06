@@ -1,0 +1,10 @@
+html
+    head
+        title= title
+    body
+        //h1= 'Bonjour '+ user.firstname + ' ' + user.lastname
+        form(method='POST' action='/search')
+            div.form-group
+                label(for='id') Identifiant du tweet à récupérer :
+                input#id.form-control(type='text', placeholder='id tweet' name='id')
+            button.btn.btn-primary(type='submit') Rechercher
